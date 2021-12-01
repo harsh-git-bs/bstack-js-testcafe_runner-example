@@ -1,0 +1,5 @@
+@ECHO OFF
+set BROWSERSTACK_USE_AUTOMATE=1
+set BROWSERSTACK_DEBUG=true
+set BROWSERSTACK_TEST_RUN_NAME= Browserstack Search
+node testcafe_runner.js
