@@ -12,11 +12,10 @@ fixture`Search Browserstack`.page`https://www.google.com`;
 
 test("Search Browserstack", async (t) => {
   await t
-    .maximizeWindow()
     .typeText(querybox, "Browserstack")
-    .click(search)
+    .pressKey("enter")
+    // .click(search)
     .wait(3000)
-    .click(".LC20lb.MBeuO.DKV0Md")
+    .click(".MBeuO")
     .wait(3000);
-  console.log("index.js");
 });
