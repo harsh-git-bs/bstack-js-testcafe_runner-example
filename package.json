@@ -5,7 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "browserlist": "testcafe -b browserstack"
+    "browserlist": "testcafe -b browserstack",
+    "parallel": "node .\testcafe_runner_parallel.js",
+    "single": "node .\testcafe_runner_single.js"
+
   },
   "author": "",
   "license": "ISC",
